@@ -1,0 +1,16 @@
+PODS:
+  - FYNotification (0.1.0)
+
+DEPENDENCIES:
+  - FYNotification (from `../`)
+
+EXTERNAL SOURCES:
+  FYNotification:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FYNotification: 2656e0c892965b6d225abb39cbbd09bde1e6ea6e
+
+PODFILE CHECKSUM: 8542ff31bbb9e2a57f0abb5b7093777fc44512b7
+
+COCOAPODS: 1.1.1

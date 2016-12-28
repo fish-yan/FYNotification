@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FYNotification_Example' do
+  pod 'FYNotification', :path => '../'
+
+  target 'FYNotification_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
