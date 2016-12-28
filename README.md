@@ -1,7 +1,7 @@
 # FYNotification
 
-[![CI Status](http://img.shields.io/travis/fish-yan/FYNotification.svg?style=flat)](https://travis-ci.org/fish-yan/FYNotification)
-[![Version](https://img.shields.io/cocoapods/v/FYNotification.svg?style=flat)](http://cocoapods.org/pods/FYNotification)
+[![CI Status](http://img.shields.io/travis/fish-yan/FYNotification.svg?branch=master)](https://travis-ci.org/fish-yan/FYNotification)
+[![Version](https://img.shields.io/cocoapods/v/FYNotification.svg)](http://cocoapods.org/pods/FYNotification)
 [![License](https://img.shields.io/cocoapods/l/FYNotification.svg?style=flat)](http://cocoapods.org/pods/FYNotification)
 [![Platform](https://img.shields.io/cocoapods/p/FYNotification.svg?style=flat)](http://cocoapods.org/pods/FYNotification)
 
