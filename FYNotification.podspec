@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FYNotification/Classes/**/*'
+  s.source_files = 'FYNotification/Classes/*.*'
   
   s.resource_bundles = {
      'FYNotification' => ['FYNotification/Assets/*.png']
