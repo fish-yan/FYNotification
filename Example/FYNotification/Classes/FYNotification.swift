@@ -1,9 +1,9 @@
 //
-//  FYNotificationView.swift
-//  FYNotificationView
+//  FYNotification.swift
+//  Pods
 //
-//  Created by 薛焱 on 2016/12/26.
-//  Copyright © 2016年 薛焱. All rights reserved.
+//  Created by 薛焱 on 2016/12/29.
+//
 //
 
 import UIKit
@@ -15,10 +15,10 @@ import UIKit
     case other
 }
 
-class FYNotificationView: UIView {
+class FYNotification: UIView {
     
-    private static let notificationView = FYNotificationView(frame: CGRect(x: 0, y: -64, width: UIScreen.main.bounds.width, height: 100))
-
+    private static let notificationView = FYNotification(frame: CGRect(x: 0, y: -64, width: UIScreen.main.bounds.width, height: 100))
+    
     @IBOutlet weak private var statusImg: UIImageView!
     @IBOutlet weak private var messageLab: UILabel!
     @IBOutlet weak var imgWidthMargin: NSLayoutConstraint!
@@ -72,7 +72,7 @@ class FYNotificationView: UIView {
     
     @objc private func showNotificationView(status: FYNotificationStatus, message: String, duration: TimeInterval) {
         let window = UIApplication.shared.keyWindow
-        window?.addSubview(FYNotificationView.notificationView)
+        window?.addSubview(FYNotification.notificationView)
         messageLab.text = message
         switch status {
         case .success:
@@ -90,7 +90,7 @@ class FYNotificationView: UIView {
         animation.duration = animateDuration
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
-        FYNotificationView.notificationView.layer.add(animation, forKey: "showAnimation")
+        FYNotification.notificationView.layer.add(animation, forKey: "showAnimation")
         timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(dismissNotification), userInfo: nil, repeats: false)
     }
     
@@ -100,9 +100,9 @@ class FYNotificationView: UIView {
         animation.duration = animateDuration - 0.08
         animation.fillMode = kCAFillModeForwards
         animation.isRemovedOnCompletion = false
-        FYNotificationView.notificationView.layer.add(animation, forKey: "dismissAnimation")
+        FYNotification.notificationView.layer.add(animation, forKey: "dismissAnimation")
         timer?.invalidate()
         timer = nil
-        FYNotificationView.notificationView.perform(#selector(removeFromSuperview), with: nil, afterDelay: animateDuration)
+        FYNotification.notificationView.perform(#selector(removeFromSuperview), with: nil, afterDelay: animateDuration)
     }
 }

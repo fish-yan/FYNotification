@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func action(_ sender: Any) {
-        FYNotificationView.show(status: .success, message: "操作成功", duration: 2)
+        FYNotification.show(status: .success, message: "操作成功", duration: 2)
     }
 
     override func didReceiveMemoryWarning() {

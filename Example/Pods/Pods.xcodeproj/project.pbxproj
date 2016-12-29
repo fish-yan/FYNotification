@@ -13,7 +13,7 @@
 		7178E0335A1CDCC185CC23ED73CC26B9 /* FYNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1072285FFECB11101E500B06A68E2B /* FYNotification-dummy.m */; };
 		87086B4D9EDB045BA317009A51498960 /* FYNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 697EE60CFD20FEFC0EC1CC66D17F2AB8 /* FYNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C4D825D2D151C35E2F9E1011D078D23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		93D4655F1E139EA100AD4ABD /* FYNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4655D1E139EA100AD4ABD /* FYNotificationView.swift */; };
+		933BC2111E14B243004B05C4 /* FYNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933BC2101E14B243004B05C4 /* FYNotification.swift */; };
 		AFF50BE35FD3B552FF398D2FA0666B53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		B80B629A5E538DFA7DFE455698C1A1FE /* Pods-FYNotification_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4876AD8C92AA9257E4667E9AE2992C47 /* Pods-FYNotification_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5AF44216F3EACC32FD4A13B694D8D61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -48,8 +48,8 @@
 		6B23630CAFF2F0F6F64B5E327886AE14 /* Pods_FYNotification_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYNotification_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFCF840E67E834C8EEB2425E686DC4C /* Pods-FYNotification_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FYNotification_Example-frameworks.sh"; sourceTree = "<group>"; };
 		90868DEA62E300D57996C58D25A2ACF2 /* Pods-FYNotification_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FYNotification_Tests-umbrella.h"; sourceTree = "<group>"; };
+		933BC2101E14B243004B05C4 /* FYNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYNotification.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93D4655D1E139EA100AD4ABD /* FYNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYNotificationView.swift; sourceTree = "<group>"; };
 		93D4655E1E139EA100AD4ABD /* FYNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYNotificationView.xib; sourceTree = "<group>"; };
 		A194BF0E0C7236D991FEE564426080B5 /* Pods-FYNotification_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FYNotification_Example-dummy.m"; sourceTree = "<group>"; };
 		AC1072285FFECB11101E500B06A68E2B /* FYNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FYNotification-dummy.m"; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 		1BBF03EC92A0355ECA2FB3F55ADED085 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				93D4655D1E139EA100AD4ABD /* FYNotificationView.swift */,
 				93D4655E1E139EA100AD4ABD /* FYNotificationView.xib */,
+				933BC2101E14B243004B05C4 /* FYNotification.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -347,8 +347,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93D4655F1E139EA100AD4ABD /* FYNotificationView.swift in Sources */,
 				7178E0335A1CDCC185CC23ED73CC26B9 /* FYNotification-dummy.m in Sources */,
+				933BC2111E14B243004B05C4 /* FYNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
