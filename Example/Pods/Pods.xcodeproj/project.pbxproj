@@ -49,8 +49,8 @@
 		8AFCF840E67E834C8EEB2425E686DC4C /* Pods-FYNotification_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FYNotification_Example-frameworks.sh"; sourceTree = "<group>"; };
 		90868DEA62E300D57996C58D25A2ACF2 /* Pods-FYNotification_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FYNotification_Tests-umbrella.h"; sourceTree = "<group>"; };
 		933BC2101E14B243004B05C4 /* FYNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYNotification.swift; sourceTree = "<group>"; };
+		933BC21A1E151BFA004B05C4 /* FYNotification.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYNotification.xib; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93D4655E1E139EA100AD4ABD /* FYNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYNotificationView.xib; sourceTree = "<group>"; };
 		A194BF0E0C7236D991FEE564426080B5 /* Pods-FYNotification_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FYNotification_Example-dummy.m"; sourceTree = "<group>"; };
 		AC1072285FFECB11101E500B06A68E2B /* FYNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FYNotification-dummy.m"; sourceTree = "<group>"; };
 		B7A3BB08FF9CBE36DB7727D3C56D6FFA /* FYNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FYNotification-prefix.pch"; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 		1BBF03EC92A0355ECA2FB3F55ADED085 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				93D4655E1E139EA100AD4ABD /* FYNotificationView.xib */,
 				933BC2101E14B243004B05C4 /* FYNotification.swift */,
+				933BC21A1E151BFA004B05C4 /* FYNotification.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

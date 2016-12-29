@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FYNotification">
+            <connections>
+                <outlet property="imgWidthMargin" destination="mMB-g0-Bd9" id="OX7-nH-2lW"/>
+                <outlet property="messageLab" destination="ajK-Su-1Dj" id="gho-N8-QVM"/>
+                <outlet property="oneView" destination="LHu-ba-dPk" id="JT9-ZS-LFD"/>
+                <outlet property="statusImg" destination="hBc-IN-2Qv" id="fpK-1a-BeF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LHu-ba-dPk">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-IN-2Qv">
+                    <rect key="frame" x="20" y="66" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Amt-6R-RBm"/>
+                        <constraint firstAttribute="width" constant="25" id="mMB-g0-Bd9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajK-Su-1Dj">
+                    <rect key="frame" x="55" y="68" width="300" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.25490196079999999" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hBc-IN-2Qv" firstAttribute="leading" secondItem="LHu-ba-dPk" secondAttribute="leading" constant="20" id="C9m-Ub-cNB"/>
+                <constraint firstItem="ajK-Su-1Dj" firstAttribute="leading" secondItem="hBc-IN-2Qv" secondAttribute="trailing" constant="10" id="ERK-f8-VZX"/>
+                <constraint firstAttribute="trailing" secondItem="ajK-Su-1Dj" secondAttribute="trailing" constant="20" id="NPo-8p-2fj"/>
+                <constraint firstAttribute="bottom" secondItem="hBc-IN-2Qv" secondAttribute="bottom" constant="9" id="WVh-Ai-ibn"/>
+                <constraint firstItem="hBc-IN-2Qv" firstAttribute="leading" secondItem="LHu-ba-dPk" secondAttribute="leading" constant="20" id="f12-fm-0OO"/>
+                <constraint firstItem="ajK-Su-1Dj" firstAttribute="centerY" secondItem="hBc-IN-2Qv" secondAttribute="centerY" id="hUI-d6-jye"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="31.5" y="162"/>
+        </view>
+    </objects>
+</document>

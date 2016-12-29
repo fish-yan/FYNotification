@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FYNotification
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,7 @@ class ViewController: UIViewController {
     }
     @IBAction func action(_ sender: Any) {
         FYNotification.show(status: .success, message: "操作成功", duration: 2)
-    }
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -14,11 +14,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		933BC2131E14B2B7004B05C4 /* FYNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933BC2121E14B2B7004B05C4 /* FYNotification.swift */; };
-		93D465661E13A14A00AD4ABD /* FYNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D465631E13A14A00AD4ABD /* FYNotificationView.xib */; };
-		93D4656E1E13A1E500AD4ABD /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D4656A1E13A1E500AD4ABD /* error.png */; };
-		93D4656F1E13A1E500AD4ABD /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D4656B1E13A1E500AD4ABD /* success.png */; };
-		93D465701E13A1E500AD4ABD /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D4656C1E13A1E500AD4ABD /* warning.png */; };
 		ECCF6652996F9801A603B841 /* Pods_FYNotification_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11590E10424CEBE12EDABF7A /* Pods_FYNotification_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,11 +43,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8107B37A98DC6F0C8E9023AF /* Pods-FYNotification_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYNotification_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYNotification_Example/Pods-FYNotification_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		850BDA268CE3673444DB61E0 /* Pods_FYNotification_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYNotification_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		933BC2121E14B2B7004B05C4 /* FYNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYNotification.swift; sourceTree = "<group>"; };
-		93D465631E13A14A00AD4ABD /* FYNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYNotificationView.xib; sourceTree = "<group>"; };
-		93D4656A1E13A1E500AD4ABD /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
-		93D4656B1E13A1E500AD4ABD /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
-		93D4656C1E13A1E500AD4ABD /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
 		BAF043E486A58C52FC1D7197 /* Pods-FYNotification_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYNotification_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYNotification_Example/Pods-FYNotification_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DB47DA1BD7695D228018DFC2 /* Pods-FYNotification_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYNotification_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYNotification_Tests/Pods-FYNotification_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FBF786ADCB4E2A4AE9242414 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -114,8 +104,6 @@
 		607FACD21AFB9204008FA782 /* Example for FYNotification */ = {
 			isa = PBXGroup;
 			children = (
-				93D465681E13A1E500AD4ABD /* Assets */,
-				93D465601E13A14A00AD4ABD /* Classes */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -169,25 +157,6 @@
 				11590E10424CEBE12EDABF7A /* Pods_FYNotification_Tests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		93D465601E13A14A00AD4ABD /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				933BC2121E14B2B7004B05C4 /* FYNotification.swift */,
-				93D465631E13A14A00AD4ABD /* FYNotificationView.xib */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		93D465681E13A1E500AD4ABD /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				93D4656A1E13A1E500AD4ABD /* error.png */,
-				93D4656B1E13A1E500AD4ABD /* success.png */,
-				93D4656C1E13A1E500AD4ABD /* warning.png */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,11 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				93D4656F1E13A1E500AD4ABD /* success.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				93D4656E1E13A1E500AD4ABD /* error.png in Resources */,
-				93D465701E13A1E500AD4ABD /* warning.png in Resources */,
-				93D465661E13A14A00AD4ABD /* FYNotificationView.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,7 +363,6 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				933BC2131E14B2B7004B05C4 /* FYNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,14 @@
 
 import UIKit
 
-@objc enum FYNotificationStatus: Int {
+@objc public enum FYNotificationStatus: Int {
     case success
     case error
     case warning
     case other
 }
 
-class FYNotification: UIView {
+open class FYNotification: UIView {
     
     private static let notificationView = FYNotification(frame: CGRect(x: 0, y: -64, width: UIScreen.main.bounds.width, height: 100))
     
@@ -29,7 +29,7 @@ class FYNotification: UIView {
     
     private override init(frame: CGRect) {
         super.init(frame: frame)
-        oneView = UINib(nibName: "FYNotificationView", bundle: Bundle(for: self.classForCoder)).instantiate(withOwner: self, options: nil).last as! UIView
+        oneView = UINib(nibName: "FYNotification", bundle: Bundle(for: classForCoder)).instantiate(withOwner: self, options: nil).last as! UIView
         oneView.frame = self.bounds
         self.addSubview(oneView)
         self.layer.shadowColor = UIColor.gray.cgColor
@@ -37,19 +37,19 @@ class FYNotification: UIView {
         self.layer.shadowOpacity = 0.1
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    class func configure(backgroundColor: UIColor, textColor:UIColor, fontSize: CGFloat) {
+    public class func configure(backgroundColor: UIColor, textColor:UIColor, fontSize: CGFloat) {
         notificationView.configureNotificationView(backgroundColor: backgroundColor, textColor: textColor, fontSize: fontSize)
     }
     
-    class func show(status: FYNotificationStatus, message: String, duration: TimeInterval) {
+    public class func show(status: FYNotificationStatus, message: String, duration: TimeInterval) {
         notificationView.fyShowNotification(status: status, message: message, duration: duration)
     }
     
-    class func dismiss() {
+    public class func dismiss() {
         notificationView.dismissNotification()
     }
     
