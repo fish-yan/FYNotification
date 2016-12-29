@@ -76,11 +76,11 @@ open class FYNotification: UIView {
         messageLab.text = message
         switch status {
         case .success:
-            statusImg.image = UIImage(named: "success")
+            statusImg.image = UIImage(named: imagePath(name: "success.png")) ?? UIImage(named: imageFramework(name: "success.png"))
         case .warning:
-            statusImg.image = UIImage(named: "warning")
+            statusImg.image = UIImage(named: imagePath(name: "warning.png")) ?? UIImage(named: imageFramework(name: "warning.png"))
         case .error:
-            statusImg.image = UIImage(named: "error")
+            statusImg.image = UIImage(named: imagePath(name: "error.png")) ?? UIImage(named: imageFramework(name: "error.png"))
         case .other:
             imgWidthMargin.constant = 0
             messageLab.font = UIFont.systemFont(ofSize: 15)
@@ -92,6 +92,14 @@ open class FYNotification: UIView {
         animation.isRemovedOnCompletion = false
         FYNotification.notificationView.layer.add(animation, forKey: "showAnimation")
         timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(dismissNotification), userInfo: nil, repeats: false)
+    }
+    
+    private func imagePath(name: String) -> String {
+        return "FYNotification.bundle/\(name)"
+    }
+    
+    private func imageFramework(name: String) -> String {
+        return "Frameworks/FYNotification.framework/FYNotification.bundle/\(name)"
     }
     
     @objc private func dismissNotification() {
