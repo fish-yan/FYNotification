@@ -31,7 +31,7 @@ configure notification style
 FYNotification.configure(backgroundColor: UIColor.black, textColor:UIColor.white, fontSize: 15)
 ```
 
-add a notification whith statsu, duration and message
+add a notification with statsu, duration and message
 ```swift
 /** show notification
   * status: FYNotificationStatus (success, error, warning, other. other hasn't status image)
