@@ -41,14 +41,25 @@ open class FYNotification: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /** configure notification
+      * 
+     */
     public class func configure(backgroundColor: UIColor, textColor:UIColor, fontSize: CGFloat) {
         notificationView.configureNotificationView(backgroundColor: backgroundColor, textColor: textColor, fontSize: fontSize)
     }
     
+    /** show notification
+      * status: FYNotificationStatus (success, error, warning, other. other hasn't status image)
+      * message: String
+      * duration: TimeInterval (Notification display time)
+     */
     public class func show(status: FYNotificationStatus, message: String, duration: TimeInterval) {
         notificationView.fyShowNotification(status: status, message: message, duration: duration)
     }
     
+    /** notification disappear immediately
+      *
+     */
     public class func dismiss() {
         notificationView.dismissNotification()
     }
