@@ -1,6 +1,6 @@
 # FYNotification
 
-[![CI Status](http://img.shields.io/travis/fish-yan/FYNotification.svg?branch=master)](https://travis-ci.org/fish-yan/FYNotification)
+[![CI Status](http://img.shields.io/travis/fish-yan/FYNotification.svg?style=flat)](https://travis-ci.org/fish-yan/FYNotification)
 [![Version](https://img.shields.io/cocoapods/v/FYNotification.svg)](http://cocoapods.org/pods/FYNotification)
 [![License](https://img.shields.io/cocoapods/l/FYNotification.svg?style=flat)](http://cocoapods.org/pods/FYNotification)
 [![Platform](https://img.shields.io/cocoapods/p/FYNotification.svg?style=flat)](http://cocoapods.org/pods/FYNotification)
@@ -18,6 +18,35 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "FYNotification"
+```
+
+##How to use
+
+configure notification style
+
+```swift
+/** configure notification
+  * 
+ */
+FYNotification.configure(backgroundColor: UIColor.black, textColor:UIColor.white, fontSize: 15)
+```
+
+add a notification whit statsu, duration and message
+```swift
+/** show notification
+  * status: FYNotificationStatus (success, error, warning, other. other hasn't status image)
+  * message: String
+  * duration: TimeInterval (Notification display time)
+ */
+FYNotification.show(status: .success, message: "操作成功", duration: 2)
+```
+
+dismiss notification
+```swift
+/** notification disappear immediately
+  *
+ */
+FYNotification.dismiss()
 ```
 
 ## Author
